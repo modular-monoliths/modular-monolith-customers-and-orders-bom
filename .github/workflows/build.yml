@@ -29,4 +29,5 @@ jobs:
         S3_REPO_DEPLOY_URL: ${{secrets.S3_REPO_DEPLOY_URL}}
         S3_REPO_AWS_ACCESS_KEY: ${{secrets.S3_REPO_AWS_ACCESS_KEY}}
         S3_REPO_AWS_SECRET_ACCESS_KEY: ${{secrets.S3_REPO_AWS_SECRET_ACCESS_KEY}}
+        AWS_REGION: ${{secrets.AWS_REGION}}
       run: ./deploy-artifact.sh
